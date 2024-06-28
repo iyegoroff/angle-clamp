@@ -21,8 +21,8 @@ module customizer_limit() {}
 tiny = 0.01;
 fillet = 2;
 bolt_shaft_diameter = bolt_thread_diameter + clearance;
-knob_inner_radius = bolt_width_across_corners * 0.75;
-knob_outer_radius = bolt_width_across_corners * 1.25;
+knob_inner_radius = bolt_width_across_corners / 2 + 1.5;
+knob_outer_radius = knob_inner_radius + 3.5;
 
 module cond_hull(enabled) {
   if (enabled)
@@ -129,8 +129,10 @@ if ($preview) {
 } else if (print_vertically) {
   translate([ 0, 0, clamp_arm_width / 2 ]) rotate([90]) small_clamp();
   translate([ 0, 5, clamp_arm_width / 2 ]) mirror([ 0, 1, 0 ]) rotate([90]) big_clamp();
-  translate([ 0, -clamp_arm_height - bolt_shaft_diameter * 2 - knob_outer_radius ])
-    knob();
+  translate([
+    knob_outer_radius / 2,
+    -clamp_arm_height - bolt_shaft_diameter * 2 - knob_outer_radius - 3
+  ]) knob();
 
 } else {
   translate([ cos(clamp_angle / 2), sin(clamp_angle / 2) ] * clamp_arm_width * 180 /
