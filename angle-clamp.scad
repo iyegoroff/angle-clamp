@@ -102,7 +102,7 @@ module clamp(length, has_hull, has_nut_slot, flat_back) {
         translate([ 0, 0, clamp_arm_width * cos(clamp_angle / 2) / 2 ]) nut_slot();
       if (flat_back)
         translate([ 0, 0, -clamp_arm_width / 2 ])
-          cylinder(h = bolt_width_across_corners / 4, r = knob_outer_radius);
+          cylinder(h = bolt_width_across_corners / 4, r = knob_outer_radius + 1);
     }
   }
 }

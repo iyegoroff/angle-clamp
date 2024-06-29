@@ -1,0 +1,32 @@
+{
+    "parameterSets": {
+        "M8": {
+            "bolt_thread_diameter": "7.9",
+            "bolt_width_across_corners": "14.8",
+            "clamp_angle": "90",
+            "clamp_arm_height": "20",
+            "clamp_arm_length": "90",
+            "clamp_arm_width": "15",
+            "clearance": "0.4",
+            "knob_height": "20",
+            "nut_thickness": "6.4",
+            "nut_width_across_corners": "14.5",
+            "print_vertically": "true"
+        },
+        "M10": {
+            "bolt_thread_diameter": "9.8",
+            "bolt_width_across_corners": "19.4",
+            "clamp_angle": "90",
+            "clamp_arm_height": "20",
+            "clamp_arm_length": "90",
+            "clamp_arm_width": "15",
+            "clearance": "0.4",
+            "knob_height": "25",
+            "nut_thickness": "7.8",
+            "nut_width_across_corners": "19.2",
+            "print_vertically": "true"
+        }
+    },
+    "parameterSets": "",
+    "fileFormatVersion": "1"
+}
