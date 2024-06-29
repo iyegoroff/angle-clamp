@@ -1,4 +1,5 @@
 <img src="img/90.webp" alt="Parametric angle clamp" width="200" />
+<img src="img/box.webp" alt="Parametric angle clamp" width="200" />
 
 Design parameters like clamp angle and bolt size can be changed in the OpenSCAD customizer. The gap between metallic and plastic parts is controlled by 'clearance' parameter. Clamps on screenshots were printed without supports with PETG and a layer height of 0.2mm.
 
